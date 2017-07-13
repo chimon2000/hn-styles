@@ -1,5 +1,5 @@
 import { style, classes } from 'typestyle'
-import { px, em, color } from 'csx'
+import { px, em, color, percent } from 'csx'
 import { flexRoot } from 'csstips'
 
 export const article = style({
@@ -29,6 +29,7 @@ export const more = style({
 })
 
 export const commentList = style({
+    minWidth: percent(50),
     borderTop: `${px(1)} solid #eee`,
     marginTop: px(7),
     marginLeft: px(10)
