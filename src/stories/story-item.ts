@@ -1,15 +1,18 @@
-import { style, classes } from 'typestyle'
+import { style, classes, media } from 'typestyle'
 import { em, px } from 'csx'
 import { flexRoot } from 'csstips'
 
-export const article = style(flexRoot, {
-    paddingLeft: em(1),
-    $nest: {
-        '&:not(:last-child)': {
-            marginBottom: em(1.5)
+export const article = style(
+    flexRoot,
+    {
+        $nest: {
+            '&:not(:last-child)': {
+                marginBottom: em(1.5)
+            }
         }
-    }
-})
+    },
+    media({ minWidth: 601 }, { paddingLeft: em(1) })
+)
 
 export const index = style({
     fontSize: em(1.6),
