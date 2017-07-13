@@ -34,3 +34,7 @@ export const commentList = style({
     marginTop: px(7),
     marginLeft: px(10)
 })
+
+export const content = style({
+    wordWrap: 'break-word'
+})
