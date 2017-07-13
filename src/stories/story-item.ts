@@ -16,7 +16,7 @@ export const article = style(
 
 export const index = style({
     fontSize: em(1.6),
-    width: px(50)
+    minWidth: px(50)
 })
 
 export const detail = style({
